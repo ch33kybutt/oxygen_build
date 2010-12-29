@@ -1073,7 +1073,7 @@ function godir () {
 }
 
 function mka() {
-    schedtool -B -n 1 -e make -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@"
+    schedtool -B -n 1 -e ionice -n 1 make -j `cat /proc/cpuinfo | grep "^processor" | wc -l` "$@"
 }
 
 # Force JAVA_HOME to point to java 1.6 if it isn't already set
