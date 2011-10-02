@@ -19,8 +19,7 @@
 # mostly because screen densities interfere with the list of locales and
 # the system misbehaves when a density is the first locale.
 
-# Those are all the locales that have translations and are displayable
-# by TextView in this branch.
+# Those are all the locales that have translations.
 PRODUCT_LOCALES := en_US \
  ar_EG \
  ar_IL \
@@ -83,5 +82,3 @@ PRODUCT_LOCALES := en_US \
  zh_HK \
  zh_TW
 
-# Not currently usable:
-# ar, fa, th
