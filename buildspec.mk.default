@@ -69,7 +69,7 @@ endif
 #DEBUG_MODULE_ModuleName:=true
 
 # Specify an alternative tool chain prefix if needed.
-#TARGET_TOOLS_PREFIX:=
+TARGET_TOOLS_PREFIX:=$HOME/toolchain/ch33kycha1n/arm-eabi-4.7/20111023-2234/bin/arm-eabi-
 
 # Specify the extra CFLAGS to use when building a module whose
 # DEBUG_MODULE_ variable is set.  Host and device flags are handled

@@ -296,7 +296,7 @@ endif
 # a better one, use that instead.
 ifneq ($(filter eng tests,$(TARGET_BUILD_VARIANT)),)
   ifndef is_sdk_build
-    apns_to_use := $(wildcard vendor/google/etc/apns-conf.xml)
+    apns_to_use := $(wildcard vendor/google/system/etc/apns-conf.xml)
     ifneq ($(strip $(apns_to_use)),)
       PRODUCT_COPY_FILES := \
             $(filter-out %:system/etc/apns-conf.xml,$(PRODUCT_COPY_FILES)) \
